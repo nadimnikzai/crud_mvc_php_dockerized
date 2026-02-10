@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  # --- سرویس 1: وب‌سرور (سایت خودت) ---
+  app:
+    build: .
+    ports:
+      - "8080:80"  # سایتت روی پورت 8080 بالا میاد
+    volumes:
+      - .:/var/www/html  # تغییرات فایل رو همون لحظه ببینی
+    depends_on:
+      - db
+
+  # --- سرویس 2: دیتابیس ---
+  db:
+    image: mysql:8.0
+    container_name: pharmacy_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root  # رمز روت دیتابیس
+      MYSQL_DATABASE: test-new1           # اسم دیتابیس
+    volumes:
+      - db_data:/var/lib/mysql            # ذخیره دیتابیس که پاک نشه
+
+  # --- سرویس 3: مدیریت دیتابیس (phpMyAdmin) ---
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8081:80"  # روی پورت 8081 باز میشه
+    environment:
+      PMA_HOST: db                        # وصل میشه به سرویس db بالا
+      MYSQL_ROOT_PASSWORD: root
+    depends_on:
+      - db
+
+volumes:
+  db_data:
