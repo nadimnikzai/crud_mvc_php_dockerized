@@ -1,4 +1,4 @@
-# 🏥 Pharmacy Management System (PMS)
+# 🏥 CRUD Excercise With Php
 
 <div align="center">
 
@@ -10,7 +10,7 @@
 
 <br>
 
-**🚀 A Modern, Secure, and Containerized Solution for Drug Inventory Management.**
+**🚀 A Modern, Secure, and Containerized Inventory Management.**
 
 Built with **Pure PHP (MVC Architecture)** and styled with **Tailwind CSS**.  
 *Say goodbye to spaghetti code and hello to clean architecture!* 🍝➡️💎
@@ -58,3 +58,58 @@ You don't need XAMPP or WAMP. You just need **Docker**!
 ```bash
 git clone [https://github.com/nadimnikzai/drugs_database.git](https://github.com/nadimnikzai/drugs_database.git)
 cd drugs_database
+2. Run with Docker Compose 🐳
+Fire up the engines:
+
+Bash
+
+docker-compose up -d --build
+Wait a few moments for the containers to build and start...
+
+3. Access the App 🌐
+Open your browser and visit:
+
+App: http://localhost:8080
+
+PhpMyAdmin: http://localhost:8081 (User: root, Pass: root)
+
+📂 Project Structure
+Look at this clean structure! 😍
+
+drugs_database/
+├── config/             # Database connection (Singleton/PDO)
+├── controllers/        # Business logic (Brain of the app) 🧠
+├── views/              # HTML & Tailwind templates 🎨
+│   ├── partials/       # Reusable headers/footers
+├── docker-compose.yml  # Docker orchestration
+├── Dockerfile          # Server configuration
+├── index.php           # Entry point (Router)
+└── README.md           # You are reading this!
+🖼️ Screenshots
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+
+Note: This project is designed for educational purposes to demonstrate MVC and Docker implementation in PHP.
+
+🤝 Contributing
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the issues page.
+
+Fork the Project
+
+Create your Feature Branch (git checkout -b feature/AmazingFeature)
+
+Commit your Changes (git commit -m 'Add some AmazingFeature')
+
+Push to the Branch (git push origin feature/AmazingFeature)
+
+Open a Pull Request
+
+✍️ Author
+👤 Nadim Nikzai
+
+Github: @nadimnikzai
+
+<div align="center"> Show some ❤️ by starring ⭐ this repository! </div>
