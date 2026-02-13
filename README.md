@@ -15,7 +15,7 @@
 Built with **Pure PHP (MVC Architecture)** and styled with **Tailwind CSS**.  
 *Say goodbye to spaghetti code and hello to clean architecture!* 🍝➡️💎
 
-[Report Bug](https://github.com/nadimnikzai/drugs_database/issues) · [Request Feature](https://github.com/nadimnikzai/drugs_database/issues)
+[Report Bug](https://github.com/nadimnikzai/crud_mvc_php_dockerized.git/issues) · [Request Feature](https://github.com/nadimnikzai/crud_mvc_php_dockerized.git/issues)
 
 </div>
 
@@ -56,7 +56,7 @@ You don't need XAMPP or WAMP. You just need **Docker**!
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/nadimnikzai/drugs_database.git](https://github.com/nadimnikzai/drugs_database.git)
+git clone [https://github.com/nadimnikzai/crud_mvc_php_dockerized.git](https://github.com/nadimnikzai/crud_mvc_php_dockerized.git)
 cd drugs_database
 ```
 2. Run with Docker Compose 🐳
